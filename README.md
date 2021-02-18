@@ -146,7 +146,7 @@ return (
 ### Show (Detailed View) Page
 
 <!-- <img src="src/styles/images/showPageProject2.gif" /> -->
-<img src="src/styles/images/showPageProject2.png" />
+<img src="src/styles/images/showPageProject2-op.gif" />
 
 With each meal card there was a link to the detailed show page of that specific meal using the id of the meal to uniquely identify each meal
 
