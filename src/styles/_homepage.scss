@@ -1,0 +1,64 @@
+.homepage {
+  font-family: 'Ranchers', cursive;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  height: 100vh;
+  background-image: url('./images/fridge-background.jpg');
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  margin: 0;
+  .button {
+    margin: 5px 5px 0 0;
+  }
+}
+.home-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fade-in 1.5s ease, bounce 1.5s ease;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin-top: 25px;
+}
+.navbar {
+  font-family: 'Ranchers', cursive;
+  font-size: 24px;
+}
+.navbar.is-dark {
+  background-color: black;
+}
+input {
+  background-color: transparent;
+  height: 36px;
+  text-align: center;
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+  border: 2px solid grey;
+  border-radius: 15px;
+  width: 400px;
+  color: black;
+  font-weight: bold ;
+}
+::placeholder {
+  color: black;
+  font-weight: 900;
+}
+input:focus {
+  outline:none;
+}
+button {
+  font-family: 'Ranchers', cursive;
+  padding: 5px;
+  outline: none;
+}
+button:focus {
+  outline: none;
+}

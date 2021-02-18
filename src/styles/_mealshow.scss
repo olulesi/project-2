@@ -1,0 +1,33 @@
+// MealShow
+.recipe-animation {
+  animation: fade-in 1.5s ease, bounce 1.3s ease !important;
+}
+div.column.is-half.recipe-animation{
+  animation: fade-in 1.5s ease, bounce 1.3s ease !important;
+}
+.heading-meal {
+  font-size: 30px;
+  text-align: center;
+  animation: fade-in 1.5s ease, meal-bounce 1.3s ease;
+}
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  animation: fade-in 1.5s ease, meal-bounce 1.3s ease;
+}
+.ingredientsSection{
+  display: flex;
+  flex-direction: column;
+}
+.ingredients {
+  display: flex;
+  overflow-x: auto;
+  p{
+    margin: 20px 10px 0 0;
+  }
+}
+.ingred:hover {
+    font-size: 28px;
+}
+

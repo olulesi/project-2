@@ -1,0 +1,43 @@
+// MealIndex + MealCards
+.column-slide {
+  animation: meal-bounce 1s ease;
+}
+.image img {
+  width: 360px;
+  height: 340px;
+}
+.card-header-title {
+  height: 68px;
+  font-family: 'Raleway', sans-serif;
+}
+.size{
+  width: 360px;
+  height: 408px;
+}
+.showPage{
+  height: 380px;
+  overflow-y: auto;
+}
+.card-column:hover {
+cursor: pointer;
+border: 10px solid white;
+}
+.meal-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  form {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    input {
+      margin-right: 5px;
+    }
+  }
+}
+.yuck{
+  border: 1px solid ;
+  height: 68px;
+  background-color: #d6d6d6;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
