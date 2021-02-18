@@ -49,9 +49,9 @@ Elsie Down - [Github](https://github.com/elsiedown)
 
 ## Demonstration of the App Flow 
 
-<!-- <p style="text-align:center">
-  <!-- <img src="src/styles/images/redoappFlowProject2.gif"/> -->
-<!-- <p> -->
+<p style="text-align:center">
+  <img src="src/styles/images/ezgif.com-gif-maker.gif"/>
+<p>
 
 * The user starts at the homepage where the input box is shown asking what ingredient they have in their fridge.
 * Upon typing an ingredient and submitting the search it takes the user to the index of meals with the ingredient it contains. 
