@@ -282,8 +282,9 @@ function MealRandomShow() {
 ### Error Handling 
 
 <!-- <img src="src/styles/images/errorGifProject2.gif" /> -->
+<img src="src/styles/images/errorGifProject2img.png" />
 
-Moving on to the error handling of the search we decided to keep it on them with what is in your fridge and display a gif related to it with an error message to try again.
+Moving on to the error handling of the search we decided to keep it on theme with what is in your fridge and display a gif related to it with an error message to try again.
 
 ### Styling and Animations
 
