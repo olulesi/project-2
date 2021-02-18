@@ -246,8 +246,8 @@ const similarMeals = categories.meals
 This was then passed down as a prop to then get displayed on the meal show page.
 
 ### “My Fridge is Full” (“Im feeling Lucky”) functionality
-
-<!-- <img src="src/styles/images/fridgeFullProject2.gif" /> -->
+<!-- 
+<img src="src/styles/images/fridgeFullProject2.gif" /> -->
 
 For the functionality for “My Fridge is Full” there was already a random meal request provided by mealdb so we just had to make an axios request and a display in the format of a meal show card to keep the website consistent.
 
@@ -282,7 +282,7 @@ function MealRandomShow() {
 ### Error Handling 
 
 <!-- <img src="src/styles/images/errorGifProject2.gif" /> -->
-<img src="src/styles/images/errorGifProject2img.png" />
+<img src="src/styles/images/error-gif-maker (1).gif" />
 
 Moving on to the error handling of the search we decided to keep it on theme with what is in your fridge and display a gif related to it with an error message to try again.
 
