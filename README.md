@@ -3,7 +3,6 @@
 <img src="./src/styles/images/image-logo.png" width="100" height="100" />
 
 ## Overview
-
 For my second project at General Assembly we were given 48 hours to build a React app pair-coded with GA classmate.
 
 This React app of are choice had to consume a public API and use a router with several components.
