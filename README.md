@@ -3,11 +3,11 @@
 <img src="./src/styles/images/image-logo.png" width="100" height="100" />
 
 ## Overview
-For my second project at General Assembly we were given 48 hours to build a React app pair-coded with GA classmate.
+For my second project at General Assembly, we were given 48 hours to build a React app pair-coded with a GA classmate.
 
 This React app of are choice had to consume a public API and use a router with several components.
 
-The main concept of our app was an app where users can search and find meals of their desire based on what’s in their fridge with the ingredients and steps in making the any meal they choose from the index provided. 
+The main concept of our app was an app where users can search and find meals of their desire based on what’s in their fridge with the ingredients and steps in making any meal they choose from the index provided. 
 
 The app has been deployed with Netlify and is available [here](https://whats-in-ya-fridge.netlify.app/).
 
@@ -23,7 +23,7 @@ Elsie Down - [Github](https://github.com/elsiedown)
 ## Getting Started
 1. Access the source code via the ‘Clone or download’ button
 2. In CLI, run `yarn` on the root level to install dependencies
-3. Run  `yarn start` to run program in your local environment
+3. Run  `yarn start` to run the program in your local environment
 
 
 ## Technologies Used
@@ -52,15 +52,15 @@ Elsie Down - [Github](https://github.com/elsiedown)
 
 * The user starts at the homepage where the input box is shown asking what ingredient they have in their fridge.
 * Upon typing an ingredient and submitting the search it takes the user to the index of meals with the ingredient it contains. 
-* The user can then select a specific meal to see a detailed view of the meal with its instructions, ingredients and similar meals they like .
-* Other key features: the user can click on the my fridge is full button found on the home page which takes the user to a random meal.
+* The user can then select a specific meal to see a detailed view of the meal with its instructions, ingredients and similar meals they like.
+* Other key features: the user can click on the "my fridge is full" button found on the home page which takes the user to a random meal.
 * In addition there is a yuck button that the user can click on to hide certain meals that they find disgusting.
 * Lastly if the user types in an invalid ingredient there is an error page gif and message informing the user to try again.
 
 ## Process
-After going through the Useful resources of **[Some free APIs](https://apilist.fun/)** we could use are interests lead us to go long the lines of a Food Based API, we decided to use the Mealdb which had multiple filtered requests that we wanted to use for are website and had a large enough list of meals to fufill the purpose of are app. 
+After going through the Useful resources of **[Some free APIs](https://apilist.fun/)** we could use are interests lead us to go along the lines of a Food-Based API, we decided to use the Mealdb which had multiple filtered requests that we wanted to use for our website and had a large enough list of meals to fufil the purpose of our app. 
 
-Here are some more free Api resources we looked through:
+Here are some more free API resources we looked through:
 
 * **[Some more free APIs](https://github.com/public-apis/public-apis)**
 * **[Even more free APIs](https://dev.to/camerenisonfire/10-intriguing-public-rest-apis-for-your-next-project-2gbd)**
@@ -73,14 +73,14 @@ Here are some more free Api resources we looked through:
 
 We accumulated the resources needed and the dependencies we would like to include such as Bulma and Axios on Bear Notes.
 
-Furthermore a breakdown of each of are major components and what the functionality of each component would look like.
+Furthermore, a breakdown of each of OUR major components and what the functionality of each component would look like.
 
-When then moved on to testing the requests we wanted on insonmia to make sure it was showing results as expected and giving us a greater idea of what information we would like to show.
+When then moved on to testing the requests we wanted on Insomnia to make sure it was showing results as expected and giving us a greater idea of what information we would like to show.
 ### Home and Index Page
 
 <!-- <img src="src/styles/images/homePageProject2.gif" /> -->
 
-Then we started in implementing the search request of the meal db to are website by creating a form with an input search and using the input result as part of the request to mealdb api to output the results which is the index of meals that have the ingredient of what was submitted in the form.
+Then we started in implementing the search request of the meal DB to our website by creating a form with an input search and using the input result as a part of the request to the mealDB API to output the results which is the index of meals that have the ingredient of what was submitted in the form.
 
 ```
 import React from 'react'
@@ -102,7 +102,7 @@ function Home() {
 
 <img src="src/styles/images/indexPageProject2.png" />
 
-For the index page we decided to keep the search bar at the top of the page so the user can change what they search without having to navigate back to the home page again. 
+For the index page, we decided to keep the search bar at the top of the page so the user can change what they search without having to navigate back to the home page again. 
 
 ```
 return (
@@ -141,7 +141,7 @@ return (
 <!-- <img src="src/styles/images/showPageProject2.gif" /> -->
 <img src="src/styles/images/showPageProject2-op.gif" />
 
-With each meal card there was a link to the detailed show page of that specific meal using the id of the meal to uniquely identify each meal in the request we sent to the mealdb api.
+With each meal card, there was a link to the detailed show page of that specific meal using the id of the meal to uniquely identify each meal in the request we sent to the mealDB API.
 
 ```
 import React from 'react'
@@ -168,7 +168,7 @@ export default MealCategoryCard
 
 ```
 
-On the detailed show page we then chose to show the ingredients, categories and instructions as well as the name and image using the MealDb and axios request.
+On the detailed show page, we then chose to show the ingredients, categories and instructions as well as the name and image using the mealDB and Axios request.
 
 ```
 function MealShow() {
@@ -212,7 +212,7 @@ In the Meal show card component we displayed the instructions and the ingredient
 
 In the Meal Show component we used the properties returned in a Meal Show request to output similar meals. Using the category property we were able to link lists of meals to its categories.
 
-We made another request using the mealdb api to find all meals with a category specific to the meal id shown. Therefore providing us with an array of similar meals.
+We made another request using the mealDB API to find all meals with a category-specific to the meal id shown. Therefore providing us with an array of similar meals.
 
 ```
 const similarMeals = categories.meals
@@ -242,7 +242,7 @@ This was then passed down as a prop to then get displayed on the meal show page.
 <!-- 
 <img src="src/styles/images/fridgeFullProject2.gif" /> -->
 
-For the functionality for “My Fridge is Full” there was already a random meal request provided by mealdb so we just had to make an axios request. 
+For the functionality for “My Fridge is Full” there was already a random meal request provided by the mealDB so we just had to make an axios request. 
 We decided to display it in the format of a meal show card to keep the website consistent.
 
 ```
@@ -278,16 +278,16 @@ function MealRandomShow() {
 <!-- <img src="src/styles/images/errorGifProject2.gif" /> -->
 <img src="src/styles/images/error-gif-maker (1).gif" />
 
-Moving on to the error handling of the search we decided to keep it on theme with what is in your fridge and display a gif related to a firdge being empty alongside an error message to try again.
+Moving on to the error handling of the search we decided to keep it on theme with what is in your fridge and display a gif related to a fridge being empty alongside an error message to try again.
 
 ### Styling and Animations
 
-For the styling of the website we decided to go with Bulma css framework for the grid layout and the card layout on the meal show page.
-Using bulma was very beneficial in making the website responsive as the bulma class names handles the responsiveness itself.
+For the styling of the website, we decided to go with Bulma CSS Framework for the grid layout and the card layout on the meal show page.
+Using Bulma was very beneficial in making the website responsive as the Bulma class names handle the responsiveness itself.
 
 In addition we decided to go onto google fonts finding Raleway to use the font of our app.
 
-Regarding the animations we simply used key frames to handle all our animations 
+Regarding the animations, we simply used keyframes to handle all our animations 
 
 ```
 @keyframes slide-in {
@@ -339,7 +339,7 @@ Regarding the animations we simply used key frames to handle all our animations
 
 
 ## Challenges
-* API limitations: For features such as adding multiple ingredients to a user search the mealDb api didnt allow such requests without payment. Furthermore finding an API that had more meals to request were very hard to come by especially since we were looking for free ones.
+* API limitations: For features such as adding multiple ingredients to a user search the mealDB API didn't allow such requests without payment. Furthermore finding an API that had more meals to request were very hard to come by especially since we were looking for free ones.
 * Timeframe: There were lots of quick breaks as we were consistently putting in the hours to make sure the website came out clean and on time. This was definitely a challenge but a rewarding one as we were able to see it through.
 * Ingredients List: Displaying the ingredients list required creating an array from the object keys given from the MealDb API which was something I had never done before and took time to figure out.
 
@@ -354,9 +354,9 @@ Regarding the animations we simply used key frames to handle all our animations
 
 ## What I learned
 * How to use and manipulate data from a Public API
-* Display data from the API through axios requests in a react app using CSS dependencies such as Bulma CSS framework
+* Display data from the API through Axios requests in a react app using CSS dependencies such as Bulma CSS framework
 * How to apply animations and transitions using only keyframes.
 * Pair programming - benefits of bouncing ideas off each other and learning from one another
 * Time management in order to reach MVP within the short timeframe
-* How to handle a Hackaton time pressured situation: with frequent short breaks and leaning on other people for help when needed.
+* How to handle a Hackaton time-pressured situation: with frequent short breaks and leaning on other people for help when needed.
 
