@@ -283,7 +283,7 @@ function MealRandomShow() {
 <!-- <img src="src/styles/images/errorGifProject2.gif" /> -->
 <img src="src/styles/images/error-gif-maker (1).gif" />
 
-Moving on to the error handling of the search we decided to keep it on theme with what is in your fridge and display a gif related to a fridge being empty alongside an error message to try again.
+Moving on to the error handling of the search, we decided to keep it on theme with what is in your fridge and display a gif related to a fridge being empty alongside an error message to try again.
 
 ### Styling and Animations
 
@@ -349,7 +349,7 @@ Regarding the animations, we simply used keyframes to handle all our animations.
 * Ingredients List: Displaying the ingredients list required creating an array from the object keys given from the MealDb API which was something I had never done before and took time to figure out.
 
 ## Wins
-* Overall Site: Was very pleased with how the website looked with the animations and the professional layout of the meals and show page for the meals.
+* Overall Site: I was very pleased with how the website looked with the animations and the professional layout of the meals and show page for the meals.
 * Pair Programming Experience: Was a massive win being able to work with my partner, being able to learn from each other as well as learning together highlights why building this project 2 was a great experience.
 
 ## Future Features
@@ -359,7 +359,7 @@ Regarding the animations, we simply used keyframes to handle all our animations.
 
 ## What I learned
 * How to use and manipulate data from a Public API.
-* Display data from the API through Axios requests in a react app using CSS dependencies such as Bulma CSS framework.
+* Display data from the API through Axios requests in React using CSS dependencies such as Bulma CSS framework.
 * How to apply animations and transitions using only keyframes.
 * Pair programming - benefits of bouncing ideas off each other and learning from one another.
 * Time management skills to reach the MVP within the short timeframe.
