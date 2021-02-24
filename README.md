@@ -5,7 +5,7 @@
 ## Overview
 For my second project at General Assembly, we were given 48 hours to build a React app pair-coded with a GA classmate.
 
-This React app of are choice had to consume a public API and use a router with several components.
+This React app of our choice had to consume a public API and use a router with several components.
 
 The main concept of our app was an app where users can search and find meals of their desire based on what’s in their fridge with the ingredients and steps in making any meal they choose from the index provided. 
 
@@ -58,7 +58,7 @@ Elsie Down - [Github](https://github.com/elsiedown)
 * Lastly if the user types in an invalid ingredient there is an error page gif and message informing the user to try again.
 
 ## Process
-After going through the Useful resources of **[Some free APIs](https://apilist.fun/)** we could use are interests lead us to go along the lines of a Food-Based API, we decided to use the Mealdb which had multiple filtered requests that we wanted to use for our website and had a large enough list of meals to fufil the purpose of our app. 
+After going through some useful resources (**[Some free APIs](https://apilist.fun/)**) given to us by our instructors our interests lead us to go along the lines of a Food-Based API, we decided to use the Mealdb which had multiple filtered requests that we wanted to use for our website and had a large enough list of meals to fufil the purpose of our app. 
 
 Here are some more free API resources we looked through:
 
@@ -73,14 +73,19 @@ Here are some more free API resources we looked through:
 
 We accumulated the resources needed and the dependencies we would like to include such as Bulma and Axios on Bear Notes.
 
-Furthermore, a breakdown of each of OUR major components and what the functionality of each component would look like.
+Furthermore, a breakdown of each of our major components and what the functionality of each component would look like.
 
-When then moved on to testing the requests we wanted on Insomnia to make sure it was showing results as expected and giving us a greater idea of what information we would like to show.
+We then moved on to testing the requests we wanted on Insomnia to make sure it was showing results as expected and giving us a greater idea of what information we would like to show.
+
+### Division of Work
+
+Since we were dealing in a short time frame we decided to work through the whole project together. As a pair, we thought tackling each component and feature would save time more compared to individually especially when solving errors and writing code.
+
 ### Home and Index Page
 
 <!-- <img src="src/styles/images/homePageProject2.gif" /> -->
 
-Then we started in implementing the search request of the meal DB to our website by creating a form with an input search and using the input result as a part of the request to the mealDB API to output the results which is the index of meals that have the ingredient of what was submitted in the form.
+Then we started implementing the search request of the meal DB to our website by creating a form with an input search. We then used the input result as a part of the request to the mealDB API to output the results. This will display the index of meals that have the ingredient of what was submitted in the form.
 
 ```
 import React from 'react'
@@ -203,16 +208,16 @@ function MealShow() {
 
 ```
 
-In the Meal show card component we displayed the instructions and the ingredients mapped from the array of ingredients.
+In the Meal show card component, we displayed the instructions and the ingredients mapped from the array of ingredients.
 
 
 ### Similar Meals Feature
 
 <img src="src/styles/images/similarPagesProject2.png" />
 
-In the Meal Show component we used the properties returned in a Meal Show request to output similar meals. Using the category property we were able to link lists of meals to its categories.
+In the Meal Show component, we used the properties returned in a Meal Show request to output similar meals. Using the category property, we were able to link lists of meals to its categories.
 
-We made another request using the mealDB API to find all meals with a category-specific to the meal id shown. Therefore providing us with an array of similar meals.
+We made another request using the mealDB API to find all meals with a category-specific to the meal id shown, providing us with an array of similar meals.
 
 ```
 const similarMeals = categories.meals
@@ -242,7 +247,7 @@ This was then passed down as a prop to then get displayed on the meal show page.
 <!-- 
 <img src="src/styles/images/fridgeFullProject2.gif" /> -->
 
-For the functionality for “My Fridge is Full” there was already a random meal request provided by the mealDB so we just had to make an axios request. 
+For the functionality for “My Fridge is Full”, there was already a random meal request provided by the mealDB so we just had to make an A.xios request. 
 We decided to display it in the format of a meal show card to keep the website consistent.
 
 ```
@@ -285,9 +290,9 @@ Moving on to the error handling of the search we decided to keep it on theme wit
 For the styling of the website, we decided to go with Bulma CSS Framework for the grid layout and the card layout on the meal show page.
 Using Bulma was very beneficial in making the website responsive as the Bulma class names handle the responsiveness itself.
 
-In addition we decided to go onto google fonts finding Raleway to use the font of our app.
+In addition, we decided to go onto google fonts finding Raleway to use the font of our app.
 
-Regarding the animations, we simply used keyframes to handle all our animations 
+Regarding the animations, we simply used keyframes to handle all our animations.
 
 ```
 @keyframes slide-in {
@@ -340,7 +345,7 @@ Regarding the animations, we simply used keyframes to handle all our animations
 
 ## Challenges
 * API limitations: For features such as adding multiple ingredients to a user search the mealDB API didn't allow such requests without payment. Furthermore finding an API that had more meals to request were very hard to come by especially since we were looking for free ones.
-* Timeframe: There were lots of quick breaks as we were consistently putting in the hours to make sure the website came out clean and on time. This was definitely a challenge but a rewarding one as we were able to see it through.
+* Timeframe: There were lots of quick breaks as we were consistently putting in the hours to make sure the website came out clean and on time. This was a challenge but a rewarding one as we were able to see it through.
 * Ingredients List: Displaying the ingredients list required creating an array from the object keys given from the MealDb API which was something I had never done before and took time to figure out.
 
 ## Wins
@@ -348,15 +353,15 @@ Regarding the animations, we simply used keyframes to handle all our animations
 * Pair Programming Experience: Was a massive win being able to work with my partner, being able to learn from each other as well as learning together highlights why building this project 2 was a great experience.
 
 ## Future Features
-* Improve the yuck functionality 
-* Enabling users to save their favourite meals
-* Add multiple ingredients to the search list in order for users to find meals more tailored to what they have in their fridge.
+* Improve the yuck functionality.
+* Enabling users to save their favourite meals.
+* Add multiple ingredients to the search list for users to find meals more tailored to what they have in their fridge.
 
 ## What I learned
-* How to use and manipulate data from a Public API
-* Display data from the API through Axios requests in a react app using CSS dependencies such as Bulma CSS framework
+* How to use and manipulate data from a Public API.
+* Display data from the API through Axios requests in a react app using CSS dependencies such as Bulma CSS framework.
 * How to apply animations and transitions using only keyframes.
-* Pair programming - benefits of bouncing ideas off each other and learning from one another
-* Time management in order to reach MVP within the short timeframe
+* Pair programming - benefits of bouncing ideas off each other and learning from one another.
+* Time management skills to reach the MVP within the short timeframe.
 * How to handle a Hackaton time-pressured situation: with frequent short breaks and leaning on other people for help when needed.
 
