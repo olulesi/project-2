@@ -243,7 +243,7 @@ const similarMeals = categories.meals
 
 This was then passed down as a prop to then get displayed on the meal show page.
 
-### “My Fridge is Full” (“Im feeling Lucky”) functionality
+### “My Fridge is Full” (“I'm feeling Lucky”) functionality
 <!-- 
 <img src="src/styles/images/fridgeFullProject2.gif" /> -->
 
