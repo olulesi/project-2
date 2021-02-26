@@ -1,6 +1,6 @@
 # Project 2 - What’s in your Fridge?
 
-<img src="./src/styles/images/image-logo.png" width="100" height="100" />
+<img src="images/image-logo.png" width="100" height="100" />
 
 ## Overview
 For my second project at General Assembly, we were given 48 hours to build a React app pair-coded with a GA classmate.
@@ -47,7 +47,7 @@ Elsie Down - [Github](https://github.com/elsiedown)
 ## Demonstration of the App Flow 
 
 <p style="text-align:center">
-  <img src="src/styles/images/ezgif.com-gif-maker.gif"/>
+  <img src="images/ezgif.com-gif-maker.gif"/>
 <p>
 
 * The user starts at the homepage where the input box is shown asking what ingredient they have in their fridge.
@@ -69,7 +69,7 @@ Here are some more free API resources we looked through:
 
 ## Plan 
 
-<img src="src/styles/images/Project2Plan.png" height="400" />
+<img src="images/Project2Plan.png" height="400" />
 
 We accumulated the resources needed and the dependencies we would like to include such as Bulma and Axios on Bear Notes.
 
@@ -105,7 +105,7 @@ function Home() {
 
 ### Index View of Meals
 
-<img src="src/styles/images/indexPageProject2.png" />
+<img src="images/indexPageProject2.png" />
 
 For the index page, we decided to keep the search bar at the top of the page so the user can change what they search without having to navigate back to the home page again. 
 
@@ -144,7 +144,7 @@ return (
 ### Show (Detailed View) Page
 
 <!-- <img src="src/styles/images/showPageProject2.gif" /> -->
-<img src="src/styles/images/showPageProject2-op.gif" />
+<img src="images/showPageProject2-op.gif" />
 
 With each meal card, there was a link to the detailed show page of that specific meal using the id of the meal to uniquely identify each meal in the request we sent to the mealDB API.
 
@@ -213,7 +213,7 @@ In the Meal show card component, we displayed the instructions and the ingredien
 
 ### Similar Meals Feature
 
-<img src="src/styles/images/similarPagesProject2.png" />
+<img src="images/similarPagesProject2.png" />
 
 In the Meal Show component, we used the properties returned in a Meal Show request to output similar meals. Using the category property, we were able to link lists of meals to its categories.
 
@@ -281,7 +281,7 @@ function MealRandomShow() {
 ### Error Handling 
 
 <!-- <img src="src/styles/images/errorGifProject2.gif" /> -->
-<img src="src/styles/images/error-gif-maker (1).gif" />
+<img src="images/error-gif-maker (1).gif" />
 
 Moving on to the error handling of the search, we decided to keep it on theme with what is in your fridge and display a gif related to a fridge being empty alongside an error message to try again.
 
